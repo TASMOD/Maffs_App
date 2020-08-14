@@ -1,0 +1,14 @@
+/Users/vinushka/Documents/Maffs_App/Maffs/bin/Debug/netstandard2.0/Maffs.deps.json
+/Users/vinushka/Documents/Maffs_App/Maffs/bin/Debug/netstandard2.0/Maffs.dll
+/Users/vinushka/Documents/Maffs_App/Maffs/bin/Debug/netstandard2.0/ref/Maffs.dll
+/Users/vinushka/Documents/Maffs_App/Maffs/bin/Debug/netstandard2.0/Maffs.pdb
+/Users/vinushka/Documents/Maffs_App/Maffs/obj/Debug/netstandard2.0/Maffs.csprojAssemblyReference.cache
+/Users/vinushka/Documents/Maffs_App/Maffs/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/vinushka/Documents/Maffs_App/Maffs/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/vinushka/Documents/Maffs_App/Maffs/obj/Debug/netstandard2.0/Maffs.AssemblyInfoInputs.cache
+/Users/vinushka/Documents/Maffs_App/Maffs/obj/Debug/netstandard2.0/Maffs.AssemblyInfo.cs
+/Users/vinushka/Documents/Maffs_App/Maffs/obj/Debug/netstandard2.0/Maffs.csproj.CoreCompileInputs.cache
+/Users/vinushka/Documents/Maffs_App/Maffs/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/vinushka/Documents/Maffs_App/Maffs/obj/Debug/netstandard2.0/Maffs.dll
+/Users/vinushka/Documents/Maffs_App/Maffs/obj/Debug/netstandard2.0/ref/Maffs.dll
+/Users/vinushka/Documents/Maffs_App/Maffs/obj/Debug/netstandard2.0/Maffs.pdb
