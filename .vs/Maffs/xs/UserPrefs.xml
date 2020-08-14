@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{4A3DA91E-8007-4D8C-A1C2-CED3F45E8958}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Maffs.Android/Resources/Resource.designer.cs">
+    <Files>
+      <File FileName="Maffs/MainPage.xaml" Line="4" Column="16" />
+      <File FileName="Maffs/MainPage.xaml.cs" Line="11" Column="43" />
+      <File FileName="Maffs.iOS/AppDelegate.cs" Line="29" Column="10" />
+      <File FileName="Maffs.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="Maffs.Android/Resources/Resource.designer.cs" Line="11366" Column="24" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Maffs" expanded="True">
+            <Node name="Maffs" expanded="True">
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+            <Node name="Maffs.Android" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="Resource.designer.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="Maffs.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Maffs.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.52BDFEBC-B6D1-48C9-BBCD-DB5F3D2B812F" />
+  <MonoDevelop.Ide.ItemProperties.Maffs.Android PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

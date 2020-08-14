@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "spxeEkj5QzlutL2BZ5LfOgnzQurDgQJf/Yzk8vOWmbM67A+SD7VSstMTq8HMaAE7MfXp+l/5qBg4b3mAVrS4iA==",
+  "dgSpecHash": "iq4C2SlGUPoqeyGChrRAOLktF7YbaHEN7UeVp/1pNUxhchEc/qnc6FMOOE8mkp2JA9Ka9IW48LvtJtrcm1JUVA==",
   "success": true,
-  "projectFilePath": "/Users/vinushka/Projects/Maffs/Maffs/Maffs.csproj",
+  "projectFilePath": "/Users/vinushka/Documents/Maffs_App/Maffs/Maffs.csproj",
   "expectedPackageFiles": [
     "/Users/vinushka/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/Users/vinushka/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",

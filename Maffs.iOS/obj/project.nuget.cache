@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gHE0CXv+hiTphMVQtn/fWrozMI8yh75p5MpKN/XQnLdQQl3XasPqak4LzPJkboXDYaDY8Dw65THXfN1slxlz+g==",
+  "dgSpecHash": "OpXGJL0bkOPlPT+W2JjlDFaRY23pZ4bGWUlavYYS7TwLjTcDW4KffoHtO5Q6a3BMuiV0OrjUMuzSQMBBbZyFLA==",
   "success": true,
-  "projectFilePath": "/Users/vinushka/Projects/Maffs/Maffs.iOS/Maffs.iOS.csproj",
+  "projectFilePath": "/Users/vinushka/Documents/Maffs_App/Maffs.iOS/Maffs.iOS.csproj",
   "expectedPackageFiles": [
     "/Users/vinushka/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
     "/Users/vinushka/.nuget/packages/xamarin.forms/4.6.0.1141/xamarin.forms.4.6.0.1141.nupkg.sha512"

@@ -633,11 +633,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/vinushka/Projects/Maffs/Maffs/Maffs.csproj",
+      "projectUniqueName": "/Users/vinushka/Documents/Maffs_App/Maffs/Maffs.csproj",
       "projectName": "Maffs",
-      "projectPath": "/Users/vinushka/Projects/Maffs/Maffs/Maffs.csproj",
+      "projectPath": "/Users/vinushka/Documents/Maffs_App/Maffs/Maffs.csproj",
       "packagesPath": "/Users/vinushka/.nuget/packages/",
-      "outputPath": "/Users/vinushka/Projects/Maffs/Maffs/obj/",
+      "outputPath": "/Users/vinushka/Documents/Maffs_App/Maffs/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/vinushka/.config/NuGet/NuGet.Config"

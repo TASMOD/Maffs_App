@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QkKWj7uajae5T7kCaIfi0K1d8UYKwsxfy7XmqWYol7Xb8qCwrcfJeuj6g256et5QiPV/bA23mYZQx2YtJPF6lQ==",
+  "dgSpecHash": "3TCsy3CVNrNXMAFdaIl2CkZqlVBImGz8MvGkauRdk5ALv0S6bNfZ9NAZw1D3pJV0+/Yi7KZ0W+UuDR8R7ZQn5g==",
   "success": true,
-  "projectFilePath": "/Users/vinushka/Projects/Maffs/Maffs.Android/Maffs.Android.csproj",
+  "projectFilePath": "/Users/vinushka/Documents/Maffs_App/Maffs.Android/Maffs.Android.csproj",
   "expectedPackageFiles": [
     "/Users/vinushka/.nuget/packages/xamarin.android.arch.core.common/1.1.1.3/xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "/Users/vinushka/.nuget/packages/xamarin.android.arch.core.runtime/1.1.1.3/xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",

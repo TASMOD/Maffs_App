@@ -1935,11 +1935,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/vinushka/Projects/Maffs/Maffs.Android/Maffs.Android.csproj",
+      "projectUniqueName": "/Users/vinushka/Documents/Maffs_App/Maffs.Android/Maffs.Android.csproj",
       "projectName": "Maffs.Android",
-      "projectPath": "/Users/vinushka/Projects/Maffs/Maffs.Android/Maffs.Android.csproj",
+      "projectPath": "/Users/vinushka/Documents/Maffs_App/Maffs.Android/Maffs.Android.csproj",
       "packagesPath": "/Users/vinushka/.nuget/packages/",
-      "outputPath": "/Users/vinushka/Projects/Maffs/Maffs.Android/obj/",
+      "outputPath": "/Users/vinushka/Documents/Maffs_App/Maffs.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1954,8 +1954,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "/Users/vinushka/Projects/Maffs/Maffs/Maffs.csproj": {
-              "projectPath": "/Users/vinushka/Projects/Maffs/Maffs/Maffs.csproj"
+            "/Users/vinushka/Documents/Maffs_App/Maffs/Maffs.csproj": {
+              "projectPath": "/Users/vinushka/Documents/Maffs_App/Maffs/Maffs.csproj"
             }
           }
         }
