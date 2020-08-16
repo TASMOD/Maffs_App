@@ -6,11 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
+// TODO: it probably makes more sense to make the keypad inputs as objects so that we dont duplicate the properties over and over.
+// Only the 1 button works rn but it updates the text field, overwrite not concat.
 namespace Maffs
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        string answer = "";
 
         public MainPage()
         {
@@ -18,9 +20,16 @@ namespace Maffs
             {
                 RowDefinitions =
             {
-                new RowDefinition { Height = new GridLength(150) },
+                new RowDefinition { Height = new GridLength(50) },
+                new RowDefinition{ Height = new GridLength(100) },
+                new RowDefinition{ Height = new GridLength(100) },
+                new RowDefinition{ Height = new GridLength(100) },
                 new RowDefinition(),
-                new RowDefinition { Height = new GridLength(100) }
+                new RowDefinition(),
+                new RowDefinition(),
+                new RowDefinition(),
+                new RowDefinition()
+
             },
                 ColumnDefinitions =
             {
@@ -31,9 +40,9 @@ namespace Maffs
             };
 
             // Pause button top left
-            Button pause_button = new Button
+            Button trophy_button = new Button
             {
-                Text = "Paused",
+                Text = "Trophy",
                 BorderColor = Color.Gray,
                 BorderWidth = 1,
                 TextColor = Color.Gray,
@@ -41,60 +50,204 @@ namespace Maffs
                 Margin = 0
             };
 
-            grid.Children.Add(pause_button,0,0);
-
-            pause_button.Clicked += Pause_Clicked;
+            grid.Children.Add(trophy_button,0,0);
 
             // Help button top right
-            Button help_button = new Button
+            Button hamburger_button = new Button
             {
-                Text = "Help",
+                Text = "hamburger",
                 BorderColor = Color.Gray,
                 BorderWidth = 1,
                 TextColor = Color.Gray,
                 BackgroundColor = Color.Transparent,
             };
 
-            grid.Children.Add(help_button, 2,0);
+            grid.Children.Add(hamburger_button, 2,0);
 
             // Central sum location
             grid.Children.Add(new Label
             {
-                Text = "Sum",
+                Text = "91",
                 FontSize = 72,
                 HorizontalOptions = LayoutOptions.Center,
                 VerticalOptions = LayoutOptions.Center
-            }, 0, 3, 1, 2);
+            }, 2, 1);
 
-
-            Button skip_button = new Button
+            grid.Children.Add(new Label
             {
-                Text = "Skip Question",
+                Text = "*",
+                FontSize = 72,
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center
+            }, 1, 2);
+
+            grid.Children.Add(new Label
+            {
+                Text = "21",
+                FontSize = 72,
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center
+            }, 2, 2);
+
+            Label text_input = new Label
+            {
+                Text = answer.ToString(),
+                FontSize = 72,
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center
+            };
+
+            grid.Children.Add(text_input, 1, 3);
+            Grid.SetColumnSpan(text_input, 2);
+
+            Button one_button = new Button
+            {
+                Text = "1",
                 BorderColor = Color.Gray,
                 BorderWidth = 1,
                 TextColor = Color.Gray,
                 BackgroundColor = Color.Transparent,
-                HeightRequest = 50
             };
 
-            skip_button.Clicked += Skip_Clicked;
+            grid.Children.Add(one_button, 0, 4);
 
-            grid.Children.Add(skip_button, 0, 3, 2, 3);
+            Button two_button = new Button
+            {
+                Text = "2",
+                BorderColor = Color.Gray,
+                BorderWidth = 1,
+                TextColor = Color.Gray,
+                BackgroundColor = Color.Transparent,
+            };
+
+            grid.Children.Add(two_button, 1, 4);
+
+            Button three_button = new Button
+            {
+                Text = "3",
+                BorderColor = Color.Gray,
+                BorderWidth = 1,
+                TextColor = Color.Gray,
+                BackgroundColor = Color.Transparent,
+            };
+
+            grid.Children.Add(three_button, 2, 4);
+
+            Button four_button = new Button
+            {
+                Text = "4",
+                BorderColor = Color.Gray,
+                BorderWidth = 1,
+                TextColor = Color.Gray,
+                BackgroundColor = Color.Transparent,
+            };
+
+            grid.Children.Add(four_button, 0, 5);
+
+            Button five_button = new Button
+            {
+                Text = "5",
+                BorderColor = Color.Gray,
+                BorderWidth = 1,
+                TextColor = Color.Gray,
+                BackgroundColor = Color.Transparent,
+            };
+
+            grid.Children.Add(five_button, 1, 5);
+
+            Button six_button = new Button
+            {
+                Text = "6",
+                BorderColor = Color.Gray,
+                BorderWidth = 1,
+                TextColor = Color.Gray,
+                BackgroundColor = Color.Transparent,
+            };
+
+            grid.Children.Add(six_button, 2, 5);
+
+            Button seven_button = new Button
+            {
+                Text = "7",
+                BorderColor = Color.Gray,
+                BorderWidth = 1,
+                TextColor = Color.Gray,
+                BackgroundColor = Color.Transparent,
+            };
+
+            grid.Children.Add(seven_button, 0, 6);
+
+            Button eight_button = new Button
+            {
+                Text = "8",
+                BorderColor = Color.Gray,
+                BorderWidth = 1,
+                TextColor = Color.Gray,
+                BackgroundColor = Color.Transparent,
+            };
+
+            grid.Children.Add(eight_button, 1, 6);
+
+            Button nine_button = new Button
+            {
+                Text = "9",
+                BorderColor = Color.Gray,
+                BorderWidth = 1,
+                TextColor = Color.Gray,
+                BackgroundColor = Color.Transparent,
+            };
+
+            grid.Children.Add(nine_button, 2, 6);
+
+            Button back_button = new Button
+            {
+                Text = "<-",
+                BorderColor = Color.Gray,
+                BorderWidth = 1,
+                TextColor = Color.Gray,
+                BackgroundColor = Color.Transparent,
+            };
+
+            grid.Children.Add(back_button, 0, 7);
+
+            one_button.Clicked += (sender, EventArgs) => { Update_text(sender, EventArgs, text_input); };
+            back_button.Clicked += (sender, EventArgs) => { Update_text(sender, EventArgs, text_input); };
+
+            Button zero_button = new Button
+            {
+                Text = "0",
+                BorderColor = Color.Gray,
+                BorderWidth = 1,
+                TextColor = Color.Gray,
+                BackgroundColor = Color.Transparent,
+            };
+
+            grid.Children.Add(zero_button, 1, 7);
+
+            Button enter_button = new Button
+            {
+                Text = "->",
+                BorderColor = Color.Gray,
+                BorderWidth = 1,
+                TextColor = Color.Gray,
+                BackgroundColor = Color.Transparent,
+            };
+
+            grid.Children.Add(enter_button, 2, 7);
 
             Content = grid;
         }
 
-        private void Skip_Clicked(object sender, System.EventArgs e)
-        {
-            count++;
-            ((Button)sender).Text = $"You have skipped {count} questions.";
-
-        }
-        
-        private void Pause_Clicked(object sender, System.EventArgs e)
-        {
-            string result = (((Button)sender).Text == ("Paused")) ? "Resumed" : "Paused";
-            ((Button)sender).Text = result;
+        private void Update_text(object sender, System.EventArgs e, Label text_input)
+        {   
+            if (((Button)sender).Text != "<-")
+            {
+                string answer = (sender as Button).Text;
+                text_input.Text += answer;
+            } else
+            {
+                text_input.Text = text_input.Text.Substring(0, text_input.Text.Length - 1);
+            }
         }
     }
 }
